@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;0,900;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #eee;
   background-color: #0b0030;
 }
@@ -20,25 +22,32 @@ marquee {
 .container {
   min-width: 300px;
   display: grid;
-  grid-template-columns: 2fr 5fr;
+  grid-template-columns: 2fr 6fr;
 }
 
 header {
-  padding: 20px;
   display: flex;
   justify-content: center;
   background-color: rgb(23, 5, 73);
+  padding: 20px;
   height: 100%;
   min-height: 100vh;
+  min-width: 280px;
 }
 
 header h1 {
-  margin: 20px 0;
+  margin: 50px 0;
+  font-size: 1.7rem;
+  font-weight: 900;
   text-align: center;
 }
 
 .header-container {
   text-align: center;
+}
+
+.actual-page {
+  color: rgb(216, 143, 245);
 }
 
 .nav-items {
@@ -57,7 +66,7 @@ nav ul {
 }
 
 nav ul a {
-  background-color: #190655;
+  background-color: #3d2296;
   text-decoration: none;
   color: inherit;
   font-weight: 700;
@@ -67,8 +76,7 @@ nav ul a {
 
 nav ul a:hover {
   text-decoration: none;
-  color: #fff;
-  font-size: 1.2rem;
+  color: rgb(156, 119, 243);
 }
 
 .link-cleaner {
@@ -93,6 +101,7 @@ section {
 
 .article-read-container {
   width: 80%;
+  font-size: 18px;
 }
 
 .article-read-container video {
@@ -147,6 +156,13 @@ tr, td, th {
   padding: 40px;
 }
 
+.form-contact-container {
+  background-color: #190655;
+  padding: 40px;
+  border-radius: 5px;
+  height:min-content
+}
+
 .form-contact-container h2 {
   text-align: center;
 }
@@ -160,6 +176,10 @@ tr, td, th {
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   margin: 20px 0;
+}
+
+.form-inputs label {
+  font-size: 18px;
 }
 
 .form-contact-container .form-btns {
